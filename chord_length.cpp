@@ -1,6 +1,6 @@
 // The values I get are slightly under what they should be. This can be seen once you run
 // the program. No solution found yet. With millions of trials, it should be correct to
-// around 3 decimal places at least.
+// around 3 places at least.
 
 #include <iostream>
 #include <cstdlib>
