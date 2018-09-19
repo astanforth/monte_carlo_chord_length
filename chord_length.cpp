@@ -17,7 +17,7 @@ double double_rand(double min, double max)
 
 int main()
 {
-    int num_trials = 1000000;
+    int num_trials = 100000000;
 
     int i, j; // index variables
 	double pi = 3.14159265358979323846;
@@ -36,12 +36,14 @@ int main()
 	// An array to save the values of each distance to compute the standard deviation.
 	double std_dev;
 
+	// Loop through each radius. 
 	for(j = 0; j < radius_steps; j++)
     {
         // Initialize values to 0.
         std_dev = 0;
         chord_length_sum = 0;
 
+	// Update the radius. 
         radius = radius + radius_increment;
 
         for(i = 0; i < num_trials; i++)
